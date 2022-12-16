@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lights {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 10px;
+    background-color: rgb(48, 48, 48);
+    border: 5px solid rgb(32, 32, 32);
+    border-top: 5px solid rgb(105, 105, 105);
+    padding: 10px 5px;
+}
+
+.light {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.pedestrianButton {
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.amber {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.white {
+    background-color: white;
+}
+
+.off {
+    background-color: black;
+}
