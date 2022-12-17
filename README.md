@@ -18,5 +18,5 @@ Kasutasime Firebase Realtime andmebaasi.
 
 <img width="186" alt="image" src="https://user-images.githubusercontent.com/42422684/208269110-8fa91b8b-1910-4727-be3a-0a54b1fe8e3d.png">
 
-Igal fooril on andmebaasis oma tabel selleks, kui nad eraldi töötavad. Rohelise laine ajal kasutatakse tabelid 'green'. Kui sealses 'direction' väljas on sõna 'off',
+Igal fooril on andmebaasis oma tabel selleks, kui nad eraldi töötavad. Rohelise laine ajal kasutatakse tabelit 'green'. Kui sealses 'direction' väljas on sõna 'off',
 siis kasutab iga foor oma tabeli andmeid, vastasel juhul on tegemist rohelise lainega ja tuleb kasutada tabelis 'green' olevaid andmeid.
