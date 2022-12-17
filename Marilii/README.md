@@ -3,7 +3,7 @@ Lõin oma valgusfoorid kasutades switch case loogikat -
 igal foori olekul on oma number ning vastavalt sellele, kuhu foor on omadega jõudnud, siis liigub ta edasi järgmisesse faasi.
 Enne järgmise faasi määramist kontrollitakse igaks juhuks, ega foor ei ole vahepal liikunud öisesse olekusse.
 
-Ajast kinnipidamine toimib läbi muutujate, sest muido pidasid mikrokontroller ja javascript väga erinevat aega. 
+Ajast kinnipidamine toimib läbi muutujate, sest muidu pidasid mikrokontroller ja javascript väga erinevat aega. 
 Mikrokontrolleri koguajast on maha lahutatud üks sekund, et veeb ja füüsiline foor paremini sünkroonis püsiksid.
 
 ## Faasid
