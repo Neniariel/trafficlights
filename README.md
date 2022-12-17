@@ -8,7 +8,9 @@ Tiimi liikmed: Anneli Põldaru ja Marilii Saar
 Projekti eesmärgiks oli luua kokku 4 valgusfoori: 2 füüsilist ja 2 virtuaalset veebis.
 Iga foor võib toimida eraldi või kõik foorid võivad töötada koos n-ö rohelises laines.
 Fooridel on 3 režiimi: automaatne, nupuvajutusele reageeriv ja öine (vilkuv kollane).
+
 [Anneli fooridest.](https://github.com/Neniariel/trafficlights/blob/main/Anneli/README.md)
+
 [Marilii fooridest.](https://github.com/Neniariel/trafficlights/blob/main/Marilii/README.md)
 
 ## Andmebaasi struktuur
