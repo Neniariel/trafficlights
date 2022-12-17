@@ -20,3 +20,9 @@ Kasutasime Firebase Realtime andmebaasi.
 
 Igal fooril on andmebaasis oma tabel selleks, kui nad eraldi töötavad. Rohelise laine ajal kasutatakse tabelit 'green'. Kui sealses 'direction' väljas on sõna 'off',
 siis kasutab iga foor oma tabeli andmeid, vastasel juhul on tegemist rohelise lainega ja tuleb kasutada tabelis 'green' olevaid andmeid.
+
+
+## Juhtpaneel
+Valgusfooride juhtimiseks lõime veebilehe, kus saab määrata nii rohelise lainega seotud sätteid kui ka iga foori individuaalseid sätteid:
+
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/42422684/208269379-200dddf8-b68b-4d8d-ad3b-eb677fbe30a0.png">
