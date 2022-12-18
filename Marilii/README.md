@@ -38,3 +38,4 @@ Kui suund on vasakule, siis on mariliiV viivituse pikkus 2-3 ja 3-4 viivituste s
 * Tulevikus võiks koodi korra üle käia ja seda optimeerida - hetkel on seal kindlasti juppe, mille võib ära kustutada või eraldi funktsiooni tõsta.
 * Jalakäia nupuvajutuse funktsiooni alguses peaks olema 3s ooteperiood - hetkel see ei toimi ja see võiks saada parandatud.
 * Vilkumise funktsioonid võiks veel korra üle vaadata - hetkel toimivad nad füüsilises ja virtuaalses natuke erinevalt, mistõttu võib karta, et kuskil on mingi kala sees.
+* Rohelise laine nupurežiim tuleks üle kontrollida - kuna seda ei ole piisavalt katsetatud, siis võivad seal mõningad kalad sees olla.
