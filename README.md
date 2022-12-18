@@ -43,7 +43,7 @@ Marilii füüsiline -> Marilii virtuaalne -> Anneli füüsiline -> Anneli virtua
 
 ## Videod
 
-**Soovitus:** Videoklippide vaatamiseks soovitan neid vaadata täisekraanivaates.  
+**Soovitus:** Videoklippide vaatamiseks soovitan need avada täisekraanivaates.  
 
 <br >
 
