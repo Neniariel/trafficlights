@@ -45,6 +45,8 @@ Marilii füüsiline -> Marilii virtuaalne -> Anneli füüsiline -> Anneli virtua
 
 **Soovitus:** Videoklippide vaatamiseks soovitan need avada täisekraanivaates.  
 
+> Videote filmimisel oli kasutuses 2 mobiiltelefoni, mis kandsid laivis üle füüsiliste fooride videopilti. [OBS Studio](https://obsproject.com/) abil salvestasin ekraanil toimuvat.  
+
 <br >
 
 ### Automaatse režiimi video:
@@ -55,8 +57,8 @@ https://user-images.githubusercontent.com/55189772/208322379-235837f6-60be-484a-
 
 ### Nupuvajutuse video:
 
- - Määrates foori uueks režiimiks nupurežiimi, liigub foor ööreziimist välja ja jääb nupuvajutust ootama.  
- 
+ - Määrates foori uueks režiimiks nupurežiimi, liigub foor ööreziimist välja ja jääb nupuvajutust ootama (autodele roheline & jalakäijatele punane seisundis).  
+
  - Peale nupuvajutust ootab foor 3s ning seejärel liigub edasi järgmistesse seisunditesse.  
 
 https://user-images.githubusercontent.com/55189772/208322135-f05941b3-780e-4da1-8d03-118186d03993.mp4
@@ -67,7 +69,7 @@ https://user-images.githubusercontent.com/55189772/208322135-f05941b3-780e-4da1-
 
  - Videoklipi esimeses pooles toimetab roheline laine suunaga:  
    Marilii NodeMCU -> Marilii virtuaalne -> Anneli NodeMCU -> Anneli virtuaalne.  
-   
+
  - Ja video teises pooles on laine vastupidise suunaga.  
 
 https://user-images.githubusercontent.com/55189772/208320782-eecefe6b-2823-4491-ab64-a2ce6e0591ab.mp4  
