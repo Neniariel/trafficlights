@@ -19,6 +19,7 @@ Allpool on välja joonistatud valgusfoori loogika erinevad faasid:
 | 5      |  :black_circle: :black_circle: :green_circle:   |  :red_circle: :black_circle:      | :black_circle:        | Auto roheline tuli vilgub       |    2s    |
 | 6      |  :black_circle: :yellow_circle: :black_circle:  |  :red_circle: :black_circle:      | :black_circle:        |                                 |    1s    |
 | 7      |  :red_circle: :black_circle: :black_circle:     |  :red_circle: :black_circle:      | :black_circle:        |                                 |    1s    |
+|        |                                                 |                                   |                       |                                 |          |
 | 8      |  :black_circle: :yellow_circle: :black_circle:  |  :black_circle: :black_circle:    | :black_circle:        | Öö: auto kollane tuli vilgub    |          |
 
 
