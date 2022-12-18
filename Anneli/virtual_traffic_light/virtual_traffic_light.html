@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="virtual_traffic_light.css">
+  <title>My Virtual Traffic Light</title>
+  <script src="virtual_traffic_light.js" type="module"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section class="crossing-section">
+      <div class="pedestrian-light-container">
+        <div class="light-bulb" id="pedestrianRed"></div>
+        <div class="light-bulb" id="pedestrianGreen"></div>
+      </div>
+      <div class="crossing-button-wrap">
+        <img src="assets/crossing_dark.png" alt="crossing sign" width="30" class="crossing-sign">
+        <button onclick="waitingToCross()" class="crossing-button">
+          <div class="buttons-light" id="buttonsLight"></div>
+        </button>
+      </div>
+    </section>
+    <section class="traffic-lights-section">
+      <div class="car-light-container">
+        <div class="light-bulb" id="carRed"></div>
+        <div class="light-bulb" id="carYellow"></div>
+        <div class="light-bulb" id="carGreen"></div>
+      </div>
+    </section>
+    <section class="traffic-mode-section">
+      <div class="mode-div"></div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

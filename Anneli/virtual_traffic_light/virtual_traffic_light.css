@@ -1,0 +1,190 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("assets/bg-img.jpg");
+  background-position: center top;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+main {
+  margin: auto;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.crossing-section {
+  margin-left: 0px;
+  padding-top: 35rem;
+  width: 120px;
+}
+
+.crossing-button-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 35px;
+}
+
+.crossing-sign {
+  background-color: #052578;
+  margin-bottom: 5px;
+  width: 35px;
+}
+
+.crossing-button {
+  background-color: rgb(48,48,48);
+  border: 2px solid rgb(48,48,48);
+  cursor: pointer;
+  padding: 3px;
+}
+
+.buttons-light {
+  background-image: radial-gradient(rgb(68, 67, 67), black);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.white {
+  background-image: radial-gradient(white, black);
+}
+
+
+
+.traffic-lights-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0;
+  padding-top: 21rem;
+  width: 180px;
+}
+
+.car-light-container, .pedestrian-light-container {
+  background-color: rgb(48,48,48);
+  border: 5px solid rgb(32,32,32);
+  border-top: 5px solid rgb(105,105,105);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 5px;
+  width: 60px;
+}
+
+.car-light-container *, .pedestrian-light-container * {
+  margin: 5px;
+  padding: 5px;
+}
+
+.pedestrian-light-container {
+  margin-bottom: 3rem;
+}
+
+.light-bulb {
+  /* background-color: rgb(32,32,32); */
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.light-bulb:nth-of-type(1) {
+  background-image: radial-gradient(rgb(59, 1, 1), black);
+}
+
+.car-light-container>.light-bulb:nth-of-type(2) {
+  background-image: radial-gradient(#3d2e02, black);
+}
+
+.light-bulb:last-of-type {
+  background-image: radial-gradient(#022e02, black);
+}
+
+.red {
+  background-image: radial-gradient(red, black) !important;
+}
+
+.yellow {
+  background-image: radial-gradient(#c5970d, black) !important;
+}
+
+.green {
+  background-image: radial-gradient(#079E07, black) !important;
+}
+
+footer {
+  bottom: 0;
+  height: 80px;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 1800px) {
+  .traffic-lights-section  {
+    padding-top: 18rem;
+    padding-left: 0px;
+    width: 120px;
+  }
+
+  .pedestrian-light-container {
+    margin-bottom: 2rem;
+    margin-left: 5px;
+  }
+
+  .crossing-section {
+    margin-left: 70px;
+    padding-top: 30rem;
+    width: 95px;
+  }
+}
+
+
+
+@media screen and (max-width: 415px) {
+  body {
+    background-position: 28% 15%;
+  }
+
+  .traffic-lights-section  {
+    padding-top: 14rem;
+  }
+
+  .car-light-container *, .pedestrian-light-container * {
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .car-light-container, .pedestrian-light-container {
+    padding: 3px;
+    width: 40px;
+  }
+
+  .pedestrian-light-container {
+    margin-left: 10px;
+  }
+
+  .crossing-section {
+    margin-left: 0;
+    padding-top: 22rem;
+  }
+
+  .light-bulb {
+    height: 20px;
+    width: 20px;
+  }
+
+  input[type=button] {
+    border-color: rgb(64,64,64);
+  }
+}

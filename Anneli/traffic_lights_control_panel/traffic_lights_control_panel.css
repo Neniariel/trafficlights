@@ -1,0 +1,204 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: auto;
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+main {
+  padding-top: 10px;
+  max-width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1 {
+  align-items: center;
+  justify-content: center;
+  line-height: 120px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+
+.green-wave-section {
+  padding: 20px;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.green-wave-wrapper {
+  border-radius: 10px;
+  border: 3px groove rgba(18,139,79, 0.3);
+  padding: 25px;
+}
+
+.green-wave-settings-div {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  gap: 50px;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 200px;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 200px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-number-field {
+  width: 50px;
+  padding: 5px;
+}
+
+.label-description {
+  line-height: 29px;
+}
+
+.label-description-higher {
+  line-height: 50px;
+}
+
+input[type=button] {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  border-color: aliceblue;
+}
+
+.wave-btn {
+  color: aliceblue;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.save-wave-changes-btn {
+  background-color: rgba(82, 113, 214, 0.9);
+  color: aliceblue;
+  height: 40px;
+  width: 100%;
+  visibility: hidden;
+}
+
+
+.individual-lights-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin: auto;
+  max-width: fit-content;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+}
+
+.settings-cards-div {
+  border-radius: 10px;
+  border: 3px groove rgba(82, 113, 214, 0.3);
+  padding: 25px;
+}
+
+.settings-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  width: 215px;
+}
+
+.save-btn {
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: rgba(82, 113, 214, 0.9);
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.mode-select-btn {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  border-style: groove;
+  border-color: rgba(82, 113, 214, 0.4);
+  width: 50px;
+  height: 50px;
+}
+
+.green-border {
+  border-color: rgba(18, 139, 79, 0.4);
+}
+
+.blue-active {
+  background-color: rgba(82, 113, 214, 0.2);
+}
+
+.green-active {
+  background-color: rgba(18, 139, 79, 0.2);
+}
+
+
+@media screen and (max-width: 620px) {
+  .green-wave-section {
+    width: 100%;
+  }
+
+  .green-wave-settings-div {
+    flex-direction: column;
+  }
+
+  .first-column, .second-column {
+    width: 100%;
+  }
+
+  .individual-lights-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+
+@media screen and (max-width: 445px) {
+  .decor-img {
+    display: none;
+  }
+
+  h1 {
+    line-height: 30px;
+    margin: auto;
+    font-size: x-large;
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="traffic_lights_control_panel.css">
+  <title>Traffic Lights System</title>
+  <script src="traffic_lights_control_panel.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/traffic_light_green_to_left.png" alt="traffic light" height="100" class="decor-img">
+    <h1>Traffic Lights System</h1>
+    <img src="assets/traffic_light_green_to_right.png" alt="traffic light" height="100" class="decor-img">
+  </header>
+  <main>
+    <section class="green-wave-section">
+      <div class="green-wave-wrapper">
+        <h2>Green Wave</h2>
+        <br>
+        <div class="green-wave-settings-div">
+          <div class="first-column">
+            <div class="row">
+              <label for="greenDuration" class="label-description">Duration: (sec)</label>
+              <input type="number" min="20" max="300" inputmode="numeric" id="greenDuration" class="input-number-field">
+            </div>
+            <div class="row">
+              <label class="label-description">Direction:</label>
+              <input type="button" value="->" onclick="setWaveDirection('right')" id="forwardDirection">
+              <input type="button" value="<-" onclick="setWaveDirection('left')" id="backwardDirection">
+            </div>
+            <div class="row">
+              <label class="label-description-higher">Mode:</label>
+              <button type="submit" onclick="setWaveMode('auto')" id="greenAutoMode" class="mode-select-btn green-border">
+                <img src="assets/auto.png" alt="" width="25">
+              </button>
+              <button type="submit" onclick="setWaveMode('button')" id="greenButtonMode" class="mode-select-btn green-border">
+                <img src="assets/button.png" alt="" width="30">
+              </button>
+            </div>
+          </div>
+          <div class="second-column">
+            <div class="row">
+              <label for="firstDistance" class="label-description">1. - 2. distance: (sec)</label>
+              <input type="number" min="0" inputmode="numeric" id="firstDistance" class="input-number-field">
+            </div>
+            <div class="row">
+              <label for="secondDistance" class="label-description">2. - 3. distance: (sec)</label>
+              <input type="number" min="0" inputmode="numeric" id="secondDistance" class="input-number-field">
+            </div>
+            <div class="row">
+              <label for="thirdDistance" class="label-description">3. - 4. distance: (sec)</label>
+              <input type="number" min="0" inputmode="numeric" id="thirdDistance" class="input-number-field">
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <input type="button" value=" " onclick="setWaveSettings()" id="waveBtn" class="wave-btn"/>
+        <br>
+        <input type="button" value="Save Changes" onclick="saveWaveChanges()" id="waveChangesBtn" class="save-wave-changes-btn"/>
+        <br>
+      </div>
+    </section>
+    <section class="individual-lights-section">
+      <div class="settings-cards-div">
+        <div class="settings-card">
+          <h3>1. Marilii's NodeMCU</h3>
+          <div class="row">
+            <button type="submit" onclick="setMode('auto', 'mariliiN')" id="mariliiNAutoBtn" class="mode-select-btn">
+              <img src="assets/auto.png" alt="" width="25">
+            </button>
+            <button type="submit" onclick="setMode('button', 'mariliiN')" id="mariliiNButtonBtn" class="mode-select-btn">
+              <img src="assets/button.png" alt="" width="30">
+            </button>
+            <button type="submit" onclick="setMode('night', 'mariliiN')" id="mariliiNNightBtn"class="mode-select-btn">
+              <img src="assets/moon.png" alt="" width="25">
+            </button>
+          </div>
+          <div class="row">
+            <label for="mariliiNDuration" class="label-description">Duration: (sec)</label>
+            <input type="number" min="20" max="300" inputmode="numeric" id="mariliiNDuration" class="input-number-field">
+          </div>
+          <input type="button" value="Save" onclick="saveIndividualSettings('mariliiN')" id="saveMariliiN" class="save-btn"/>
+        </div>
+      </div>
+      <div class="settings-cards-div">
+        <div class="settings-card">
+          <h3>2. Marilii's Virtual🚥</h3>
+          <div class="row">
+            <button type="submit" onclick="setMode('auto', 'mariliiV')" id="mariliiVAutoBtn" class="mode-select-btn">
+              <img src="assets/auto.png" alt="" width="25">
+            </button>
+            <button type="submit" onclick="setMode('button', 'mariliiV')" id="mariliiVButtonBtn" class="mode-select-btn">
+              <img src="assets/button.png" alt="" width="30">
+            </button>
+            <button type="submit" onclick="setMode('night', 'mariliiV')" id="mariliiVNightBtn" class="mode-select-btn">
+              <img src="assets/moon.png" alt="" width="25">
+            </button>
+          </div>
+          <div class="row">
+            <label for="mariliiVDuration" class="label-description">Duration: (sec)</label>
+            <input type="number" min="20" max="300" inputmode="numeric" id="mariliiVDuration" class="input-number-field">
+          </div>
+          <input type="button" value="Save" onclick="saveIndividualSettings('mariliiV')" id="saveMariliiV" class="save-btn"/>
+        </div>
+      </div>
+      <div class="settings-cards-div">
+        <div class="settings-card">
+          <h3>3. Anneli's NodeMCU</h3>
+          <div class="row">
+            <button type="submit" onclick="setMode('auto', 'anneliN')" id="anneliNAutoBtn" class="mode-select-btn">
+              <img src="assets/auto.png" alt="" width="25">
+            </button>
+            <button type="submit" onclick="setMode('button', 'anneliN')" id="anneliNButtonBtn" class="mode-select-btn">
+              <img src="assets/button.png" alt="" width="30">
+            </button>
+            <button type="submit" onclick="setMode('night', 'anneliN')" id="anneliNNightBtn" class="mode-select-btn">
+              <img src="assets/moon.png" alt="" width="25">
+            </button>
+          </div>
+          <div class="row">
+            <label for="anneliNDuration" class="label-description">Duration: (sec)</label>
+            <input type="number" min="20" max="300" inputmode="numeric" id="anneliNDuration" class="input-number-field">
+          </div>
+          <input type="button" value="Save" onclick="saveIndividualSettings('anneliN')" id="saveAnneliN" class="save-btn"/>
+        </div>
+      </div>
+      <div class="settings-cards-div">
+        <div class="settings-card">
+          <h3>4. Anneli's Virtual🚥</h3>
+          <div class="row">
+            <button type="submit" onclick="setMode('auto', 'anneliV')" id="anneliVAutoBtn" class="mode-select-btn">
+              <img src="assets/auto.png" alt="" width="25">
+            </button>
+            <button type="submit" onclick="setMode('button', 'anneliV')" id="anneliVButtonBtn" class="mode-select-btn">
+              <img src="assets/button.png" alt="" width="30">
+            </button>
+            <button type="submit" onclick="setMode('night', 'anneliV')" id="anneliVNightBtn" class="mode-select-btn">
+              <img src="assets/moon.png" alt="" width="25">
+            </button>
+          </div>
+          <div class="row">
+            <label for="anneliVDuration" class="label-description">Duration: (sec)</label>
+            <input type="number" min="20" max="300" inputmode="numeric" id="anneliVDuration" class="input-number-field">
+          </div>
+          <input type="button" value="Save" onclick="saveIndividualSettings('anneliV')" id="saveAnneliV" class="save-btn"/>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
