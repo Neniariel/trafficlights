@@ -23,7 +23,7 @@ Selle foori koostamiseks kasutasin:
 
 > Vältimaks LED'ide läbipõlemist, paigutasin nende juurde ka takistid. [Selle video](https://www.youtube.com/watch?v=NUKD9qESO58) abil sai kinnituse, et takisti paigutamisel ei ole vahet kummale poole LED'i see lisada. Seega panin takisti peale LED'i ning ühendasin selle otse miinuse reale. Nii läks tarvis vähem juhtmeid.  
 
-Valmis 1 jalakäijate ja 1 üks autode foor. Jalakäijate foori juures on ka nupp, mille abil saab (nupurežiimi toimimise ajal) teeületamise soovist märku anda. Nupuvajutuse toimumisest annab märku nupu juures asuv valge LED.  
+Valmis 1 jalakäijate ja 1 autode foor. Jalakäijate foori juures on ka nupp, mille abil saab (nupurežiimi toimimise ajal) teeületamise soovist märku anda. Nupuvajutuse toimumisest annab märku nupu juures asuv valge LED.  
 
 <br >
 
