@@ -57,7 +57,7 @@ https://user-images.githubusercontent.com/55189772/208322379-235837f6-60be-484a-
 
 ### Nupuvajutuse video:
 
- - Määrates foori uueks režiimiks nupurežiimi, liigub foor ööreziimist välja ja jääb nupuvajutust ootama (autodele roheline & jalakäijatele punane seisundis).  
+ - Määrates foori uueks režiimiks nupurežiimi, liigub foor öörežiimist välja ja jääb nupuvajutust ootama (autodele roheline & jalakäijatele punane seisundis).  
 
  - Peale nupuvajutust ootab foor 3s ning seejärel liigub edasi järgmistesse seisunditesse.  
 
