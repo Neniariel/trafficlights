@@ -25,8 +25,11 @@ Selle foori koostamiseks kasutasin:
 
 Valmis 1 jalakäijate ja 1 üks autode foor. Jalakäijate foori juures on ka nupp, mille abil saab (nupurežiimi toimimise ajal) teeületamise soovist märku anda. Nupuvajutuse toimumisest annab märku nupu juures asuv valge LED.  
 
+<br >
+
 **Valminud foori ühendusskeem ning foto:**  
 > Skeemi loomiseks kasutasin [Fritzing tarkvara](https://fritzing.org/)  
+
 ![Ühendusskeem](readme_pics/nodeMCU_wiring_diagram.jpg)  
 
 ![NodeMCU projekt](readme_pics/nodeMCU_project.jpg)  
@@ -134,7 +137,7 @@ Valminud koodiga saab lähemalt tutvuda [siin](https://github.com/Neniariel/traf
 ## Mõtted ja ideed edasise arenduse osas
 - Valminud kood tahaks kohendamist, kuna seal leidub osaliselt veel korduvat koodi, mille sooviksin eraldi funktsioonidesse tõsta. Ning abifunktsioonid omaette moodulitesse liigutada.  
 - Fooride juhtpaneel ning minu virtuaalne foor ei ole täna veel täienisti kohalduva disainiga. Seda sooviksin kindlasti parandada.  
-- Rohelise laine toimise loogika vajab kontrollimist. Videote filmimise käigus märkasin, et laine ei jää püsima.  
-- NodeMCU toimetamise kiirendamiseks võiks korra lähemalt uurida, mida kujutab endast Firebase'i teek (mis on mõeldud just ESP8266 kontrolleritele). Virtuaalne foor ja juhtpaneel saavad automaatselt (peale andmete muutumist) uued andmed kätte, siis tahaks, et ka NodeMCU kontroller toimiks samamoodi. Muidu hetkel teeb NodeMCU ise päringuid (ka siis kui andmeid ei ole muutunud).  
+- Rohelise laine toimimise loogika vajab kontrollimist. Videote filmimise käigus märkasin, et laine ei jää püsima.  
+- NodeMCU toimetamise kiirendamiseks võiks korra lähemalt uurida, mida kujutab endast Firebase'i teek (mis on mõeldud just ESP8266 kontrolleritele). Virtuaalne foor ja juhtpaneel saavad automaatselt (peale andmete muutumist) uued andmed kätte, siis tahaks, et ka NodeMCU kontroller toimiks samamoodi. Muidu hetkel teeb NodeMCU ise päringuid (ka siis kui andmed ei ole muutunud).  
 - Juhtpaneeli input väljad vajaksid sisestatud väärtuste korrektsemat kontrolli. Hetkel on seal toimimas vaid input'i enda inputmode = "numeric" nimeline atribuut.  
 - Juhtpaneeli bugi vajab parandamist. Kui veebilehte refreshida (laine töötamise ajal) siis järgmisel korral lainet enam käivitada ei õnnestu.  
